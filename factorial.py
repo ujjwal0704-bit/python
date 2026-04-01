@@ -1,11 +1,11 @@
-#n = int(input())
-def fact(n):
-     if n==2:
-        return 2
-     else:
-        n = n * fact(n-1)
-        return n
-print(fact(5))
+n = int(input())
+sum_digits = 0
+
+while n > 0:
+    sum_digits += n % 10
+    n //= 10
+
+print(sum_digits)
 
 
 
